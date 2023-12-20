@@ -1,9 +1,11 @@
+/*==========Setting=========*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
     --primaryColor: #33B667;
-    --textColor: #000;
-    --menuTextColor: #fff;
+    --standardBlack: #000;
+    --standardWhite: #fff;
 }
 
 *{
@@ -18,14 +20,29 @@ body, html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: var(--textColor);
+    color: var(--standardBlack);
 }
 
+/*==========Heading=========*/
+
+h3 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/*==========Paragrapgh=========*/
+
+span {
+    font-weight: bold;
+}
+
+
+/*==========Menu=========*/
 .menu {
     width: 100%;
     height: 76px;
     background-color: var(--primaryColor);
-    color: var(--menuTextColor);
+    color: var(--standardWhite);
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -46,15 +63,86 @@ body, html {
     grid-gap: 6em;
 }
 
+/*==========Rodada box=========*/
 .rodadas {
-    width: 340px;
+    width: 390px;
     height: 394px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #DDD;
     background: #FFF;
+    padding: 1em;
 }
 
+.rodadas-rodadasHeader {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.rodadas-rodadasHeader span {
+    font-weight: 900;
+}
+.rodadas-rodadasHeader i {
+    font-size: 190%;
+    background: var(--primaryColor);
+    color: var(--standardWhite);
+    padding: .2em .2em;
+    border-radius: 5px;
+}
+
+
+.flex1, .flex2, .flex3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex1, .flex3 {
+    width: 20%;
+}
+
+.flex2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodadas-rodadasBody {
+    display: flex;
+    flex-direction: column;
+    grid-gap: .5em
+}
+
+.rodadas-rodadasBody-jogo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 1em 0;
+    font-size: 90%;
+}
+
+.rodadas-rodadasBody-jogo:last-child {
+    border: 0;
+}
+
+.rodadas-rodadasBody-jogo .flex2 {
+    flex-direction: row;
+    font-size: 100%;
+}
+
+.rodadas-rodadasBody-jogo .flex2 svg {
+    margin: 0 1em;
+}
+
+.rodadas-rodadasBody-jogo div:not(:last-child){
+   width: 31%;
+   grid-gap: .3em;
+}
+
+.rodadas-rodadasBody-jogo div:not(:first-child){
+    width: 31%;
+    grid-gap: .3em;
+ }
 
 
 
