@@ -89,6 +89,13 @@ span {
     color: var(--standardWhite);
     padding: .2em .2em;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.rodadas-rodadasHeader .flex1 i{
+    pointer-events: none;
+    opacity: 0.5;
+    cursor:not-allowed;
 }
 
 
